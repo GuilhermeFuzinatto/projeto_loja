@@ -11,8 +11,8 @@ body{
 header{
     grid-area: header;
     position: relative;
-    height: 225px;
-    background-color:#9f41d1;
+    height: 125px;
+    background-color:crimson;
 }
 
 aside{
@@ -32,4 +32,25 @@ footer{
     position: relative;
     height: 225px;
     background-color: black;
+}
+
+.logo{
+    height: 50px;
+    position: absolute;
+    top: 35px;
+    left: 75px;
+}
+
+.perfil{
+    height: 50px;
+    position: absolute;
+    top: 35px;
+    right: 150px;
+}
+
+.carrinho{
+    height: 50px;
+    position: absolute;
+    top: 35px;
+    right: 75px;
 }
