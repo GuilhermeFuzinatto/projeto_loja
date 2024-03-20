@@ -27,6 +27,14 @@ main{
 
 }
 
+.secao{
+    border: ;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+
 footer{
     grid-area: footer;
     position: relative;
@@ -53,4 +61,12 @@ footer{
     position: absolute;
     top: 35px;
     right: 75px;
+}
+
+h2{
+    color: white;
+}
+
+ul{
+    color: white;
 }
