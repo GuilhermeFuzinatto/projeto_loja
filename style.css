@@ -1,3 +1,5 @@
+/*estruturas semanticas*/
+
 body{
     margin: 0;
     display: grid;
@@ -27,20 +29,14 @@ main{
 
 }
 
-.secao{
-    border: ;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-
-}
-
 footer{
     grid-area: footer;
     position: relative;
     height: 225px;
     background-color: black;
 }
+
+/*imagens*/
 
 .logo{
     height: 50px;
@@ -63,10 +59,59 @@ footer{
     right: 75px;
 }
 
+.instagram{
+    height: 25px;
+    position: absolute;
+    bottom: 130px;
+    right: 260px;
+}
+
+.facebook{
+    height: 60px;
+    position: absolute;
+    bottom: 65px;
+    right: 242.5px;
+}
+
+.youtube{
+    height: 28px;
+    position: absolute;
+    bottom: 32px;
+    right: 258px;
+}
+
+/*texto*/
+
 h2{
     color: white;
 }
 
 ul{
     color: white;
+    list-style: none;
+}
+
+li{
+    margin-bottom: 10px;
+}
+
+.ajuda{
+    position: absolute;
+    left: 40px;
+}
+
+.ulajuda{
+    position: absolute;
+    bottom: 0px;
+}
+
+.redes{
+    position: absolute;
+    right: 100px;
+}
+
+.ulredes{
+    position: absolute;
+    right: 160px;
+    bottom: 30px;
 }
