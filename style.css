@@ -36,6 +36,19 @@ footer{
     background-color: black;
 }
 
+.secao{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card{
+    width: 300px;
+    height: 450px;
+
+    border-color: lightgray;
+}
+
 /*imagens*/
 
 .logo{
@@ -47,6 +60,9 @@ footer{
 
 .perfil{
     height: 50px;
+    height: 50px;
+    position: absolute;
+    top: 35px;
     position: absolute;
     top: 35px;
     right: 150px;
@@ -80,11 +96,17 @@ footer{
     right: 258px;
 }
 
+.card img{
+    height: 150px;
+}
+
 /*texto*/
 
 h2{
     color: white;
 }
+
+
 
 ul{
     color: white;
@@ -113,5 +135,6 @@ li{
 .ulredes{
     position: absolute;
     right: 160px;
-    bottom: 30px;
+    bottom: 0px;
+    line-height: 39px;
 }
