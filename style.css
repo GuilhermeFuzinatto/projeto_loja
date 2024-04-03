@@ -24,6 +24,19 @@ body{
     }
 }
 
+@media screen and (max-width: 640px){
+    body{
+        margin: 0;
+        display: grid;
+        grid-template-areas:
+        "header"
+        "main"
+        "footer";
+        grid-template-columns: auto;
+        grid-template-rows: auto auto auto auto;
+    }
+}
+
 /*estruturas semanticas*/
 
 header{
@@ -55,7 +68,7 @@ footer{
 .asecao{
     display: flex;
     flex-wrap: wrap;
-    padding-top: 50px;
+    padding-top: 100px;
     padding-left: 8px;
 }
 
