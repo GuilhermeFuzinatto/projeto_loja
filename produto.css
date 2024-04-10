@@ -5,9 +5,10 @@ body{
     display: grid;
     grid-template-areas:
     "header header header"
-    "aside main main"
+    "main main main"
     "footer footer footer";
     grid-template-columns: 1fr 2fr 2fr;
+    grid-template-rows: 1fr 5fr 1fr;
 }
 
 @media screen and (max-width: 800px){
@@ -16,7 +17,6 @@ body{
         display: grid;
         grid-template-areas:
         "header"
-        "aside"
         "main"
         "footer";
         grid-template-columns: auto;
@@ -33,15 +33,9 @@ header{
     background-color:crimson;
 }
 
-aside{
-    grid-area: aside;
-    position: relative;
-    height: auto;
-    background-color: lightgray;
-}
-
 main{
     grid-area: main;
+    position: relative;
 }
 
 footer{
@@ -49,53 +43,6 @@ footer{
     position: relative;
     height: 225px;
     background-color: black;
-}
-
-.asecao{
-    display: flex;
-    flex-wrap: wrap;
-    padding-top: 80px;
-    padding-left: 45px;
-}
-
-.acard{
-    width: 250px;
-    height: 300px;
-    border: 5px solid;
-    border-color: black;
-    border-radius: 10px;
-    margin: 10px;
-    padding-left: 10px;
-    font-family:'Lucida Sans', Arial, Helvetica, sans-serif;
-}
-
-.acard:hover{
-    background-color: black;
-    color: white;
-    transition: 0.1s;
-}
-
-.msecao{
-    display: flex;
-    flex-wrap: wrap;
-    padding-left: 15px;
-    text-decoration: none;
-}
-
-.mcard{
-    width: 250px;
-    height: 300px;
-    border: 5px solid;
-    border-color: lightgray;
-    border-radius: 10px;
-    margin: 10px;
-    padding-left: 10px;
-    font-family:'Lucida Sans', Arial, Helvetica, sans-serif;
-}
-
-.mcard:hover{
-    background-color: lightgray;
-    transition: 0.1s;
 }
 
 /*imagens*/
@@ -121,6 +68,12 @@ footer{
     right: 75px;
 }
 
+.produto{
+    height:350px;
+    position: absolute;
+    left: 500px;
+}
+
 .instagram{
     height: 25px;
     position: absolute;
@@ -142,65 +95,11 @@ footer{
     right: 233px;
 }
 
-.acard img{
-    width: 240px;
-    height: 150px;
-    border-radius: 10px;
-}
-
-.mcard img{
-    width: 240px;
-    height: 150px;
-    border-radius: 10px;
-}
-
 /*texto*/
-
-.ofertas{
-    position: absolute;
-    left: 45px;
-    font-family: Impact, 'Arial Narrow Bold', sans-serif;
-    font-size: 25px;
-}
-
-.produtos{
-    position: absolute;
-    left: 50%;
-    font-family: Impact, 'Arial Narrow Bold', sans-serif;
-    font-size: 50px;
-}
-
-.classificacao{
-    padding-left: 30px;
-    padding-top: 100px;
-    font-family:'Lucida Sans', Arial, Helvetica, sans-serif;
-}
-
-a{
-    text-decoration: none;
-    color: black;
-}
 
 h2{
     color: white;
     font-family:Georgia, 'Times New Roman', Times, serif;
-}
-
-h4{
-    color: rgb(64, 200, 147);
-}
-
-.desc{
-    line-height: 5px;
-}
-
-.preco{
-    line-height: 0px;
-    padding-top: 30px;
-}
-
-.preco2{
-    line-height: 0px;
 }
 
 ul{
