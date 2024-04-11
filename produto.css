@@ -38,6 +38,39 @@ main{
     position: relative;
 }
 
+.secao{
+    border: 2px red solid;
+    height: 700px;
+    width: 400px;
+    position: absolute;
+    right: 280px;
+}
+
+.secaotam{
+    width: 360px;
+    border: 2px blue solid;
+    display: flex;
+    flex-wrap: wrap;
+    position: absolute;
+    bottom: 230px;
+    left: 20px;
+}
+
+.cardtam{
+    border: 2px crimson solid;
+    border-radius: 5px;
+    font-family: 'Lucida Sans', Arial, Helvetica, sans-serif;
+    margin: 5px;
+    height: 30px;
+    width: 30px;
+}
+
+.cardtam:hover{
+    background-color: crimson;
+    color: white;
+    transition: 0.1s;
+}
+
 footer{
     grid-area: footer;
     position: relative;
@@ -71,7 +104,8 @@ footer{
 .produto{
     height:350px;
     position: absolute;
-    left: 500px;
+    top: 75px;
+    left: 280px;
 }
 
 .instagram{
@@ -97,9 +131,69 @@ footer{
 
 /*texto*/
 
+.nomeproduto{
+    font-size: 30px;
+    font-family: 'Lucida Sans', Arial, Helvetica, sans-serif;
+    position: absolute;
+    left: 20px;
+}
+
+.desc{
+    font-size: 25px;
+    font-family: 'Lucida Sans', Arial, Helvetica, sans-serif;
+    position: absolute;
+    left: 20px;
+    top: 40px;
+}
+
+.aval{
+    font-size: 25px;
+    font-family: 'Lucida Sans', Arial, Helvetica, sans-serif;
+    position: absolute;
+    left: 20px;
+    top: 70px;
+}
+
+.preco{
+    font-size: 30px;
+    font-family: 'Lucida Sans', Arial, Helvetica, sans-serif;
+    position: absolute;
+    top: 150px;
+    left: 20px;
+}
+
+.preco2{
+    font-family: 'Lucida Sans', Arial, Helvetica, sans-serif;
+    color: rgb(64, 200, 147);
+    position: absolute;
+    left: 20px;
+    top: 195px;
+}
+
 h2{
     color: white;
     font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+h4{
+    color: rgb(64, 200, 147);
+}
+
+.tamanhos{
+    font-size: 25px;
+    font-family: 'Lucida Sans', Arial, Helvetica, sans-serif;
+    position: absolute;
+    left: 20px;
+    bottom: 300px;
+}
+
+.cardtam p{
+    margin: 4.5px;
+}
+
+.botao{
+    display: block;
+    background-color: crimson;
 }
 
 ul{
