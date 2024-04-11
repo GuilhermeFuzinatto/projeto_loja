@@ -67,6 +67,7 @@ footer{
     margin: 10px;
     padding-left: 10px;
     font-family:'Lucida Sans', Arial, Helvetica, sans-serif;
+    cursor: pointer;
 }
 
 .acard:hover{
@@ -91,6 +92,7 @@ footer{
     margin: 10px;
     padding-left: 10px;
     font-family:'Lucida Sans', Arial, Helvetica, sans-serif;
+    cursor: pointer;
 }
 
 .mcard:hover{

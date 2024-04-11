@@ -39,7 +39,6 @@ main{
 }
 
 .secao{
-    border: 2px red solid;
     height: 700px;
     width: 400px;
     position: absolute;
@@ -48,7 +47,6 @@ main{
 
 .secaotam{
     width: 360px;
-    border: 2px blue solid;
     display: flex;
     flex-wrap: wrap;
     position: absolute;
@@ -63,11 +61,34 @@ main{
     margin: 5px;
     height: 30px;
     width: 30px;
+    cursor: pointer;
 }
 
 .cardtam:hover{
     background-color: crimson;
     color: white;
+    transition: 0.1s;
+}
+
+.cardtam:active, .cardtam:focus{
+    background-color: crimson;
+    color: white;
+}
+
+.botao{
+    background-color: crimson;
+    color: white;
+    border-radius: 50px;
+    position: absolute;
+    bottom: 100px;
+    left: 20px;
+    width: 300px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.botao:hover{
+    background-color: rgb(220, 57, 90);
     transition: 0.1s;
 }
 
@@ -189,11 +210,6 @@ h4{
 
 .cardtam p{
     margin: 4.5px;
-}
-
-.botao{
-    display: block;
-    background-color: crimson;
 }
 
 ul{
