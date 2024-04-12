@@ -24,7 +24,7 @@ body{
     }
 }
 
-/*estruturas semanticas*/
+/*estruturas semanticas, cards e botoes*/
 
 header{
     grid-area: header;
@@ -36,6 +36,7 @@ header{
 main{
     grid-area: main;
     position: relative;
+    height: 1100px;
 }
 
 .secao{
@@ -50,7 +51,7 @@ main{
     display: flex;
     flex-wrap: wrap;
     position: absolute;
-    bottom: 230px;
+    bottom: 255px;
     left: 20px;
 }
 
@@ -70,7 +71,7 @@ main{
     transition: 0.1s;
 }
 
-.cardtam:active, .cardtam:focus{
+.cardtam:focus{
     background-color: crimson;
     color: white;
 }
@@ -80,7 +81,7 @@ main{
     color: white;
     border-radius: 50px;
     position: absolute;
-    bottom: 100px;
+    bottom: 125px;
     left: 20px;
     width: 300px;
     text-align: center;
@@ -89,6 +90,32 @@ main{
 
 .botao:hover{
     background-color: rgb(220, 57, 90);
+    transition: 0.1s;
+}
+
+.secaosug{
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 15px;
+    text-decoration: none;
+    position: absolute;
+    bottom: 20px;
+}
+
+.cardsug{
+    width: 250px;
+    height: 300px;
+    border: 5px solid;
+    border-color: lightgray;
+    border-radius: 10px;
+    margin: 10px;
+    padding-left: 10px;
+    font-family:'Lucida Sans', Arial, Helvetica, sans-serif;
+    cursor: pointer;
+}
+
+.cardsug:hover{
+    background-color: lightgray;
     transition: 0.1s;
 }
 
@@ -129,6 +156,12 @@ footer{
     left: 280px;
 }
 
+.cardsug img{
+    width: 240px;
+    height: 150px;
+    border-radius: 10px;
+}
+
 .instagram{
     height: 25px;
     position: absolute;
@@ -159,7 +192,7 @@ footer{
     left: 20px;
 }
 
-.desc{
+.Pdesc{
     font-size: 25px;
     font-family: 'Lucida Sans', Arial, Helvetica, sans-serif;
     position: absolute;
@@ -167,7 +200,7 @@ footer{
     top: 40px;
 }
 
-.aval{
+.Paval{
     font-size: 25px;
     font-family: 'Lucida Sans', Arial, Helvetica, sans-serif;
     position: absolute;
@@ -175,7 +208,7 @@ footer{
     top: 70px;
 }
 
-.preco{
+.Ppreco{
     font-size: 30px;
     font-family: 'Lucida Sans', Arial, Helvetica, sans-serif;
     position: absolute;
@@ -183,7 +216,7 @@ footer{
     left: 20px;
 }
 
-.preco2{
+.Ppreco2{
     font-family: 'Lucida Sans', Arial, Helvetica, sans-serif;
     color: rgb(64, 200, 147);
     position: absolute;
@@ -205,11 +238,35 @@ h4{
     font-family: 'Lucida Sans', Arial, Helvetica, sans-serif;
     position: absolute;
     left: 20px;
-    bottom: 300px;
+    bottom: 325px;
 }
 
 .cardtam p{
     margin: 4.5px;
+}
+
+.botao h1{
+    font-family: 'Lucida Sans', Arial, Helvetica, sans-serif;
+}
+
+.sug{
+    position: absolute;
+    bottom: 350px;
+    left: 25px;
+    font-family: 'Lucida Sans', Arial, Helvetica, sans-serif;
+}
+
+.desc{
+    line-height: 5px;
+}
+
+.preco{
+    line-height: 0px;
+    padding-top: 30px;
+}
+
+.preco2{
+    line-height: 0px;
 }
 
 ul{
