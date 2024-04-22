@@ -1,0 +1,131 @@
+/*grid e responsividade*/
+
+body{
+    margin: 0;
+    display: grid;
+    grid-template-areas:
+    "header header header"
+    "main main main"
+    "footer footer footer";
+    grid-template-columns: 1fr 2fr 2fr;
+    grid-template-rows: 1fr 5fr 1fr;
+}
+
+@media screen and (max-width: 800px){
+    body{
+        margin: 0;
+        display: grid;
+        grid-template-areas:
+        "header"
+        "main"
+        "footer";
+        grid-template-columns: auto;
+        grid-template-rows: auto auto auto auto;
+    }
+}
+
+/*estruturas semanticas, cards e botoes*/
+
+header{
+    grid-area: header;
+    position: relative;
+    height: 125px;
+    background-color:crimson;
+}
+
+main{
+    grid-area: main;
+}
+
+.seccadastro{
+    height: 700px;
+    width: 500px;
+    position: absolute;
+    left: 450px;
+    border: 5px blue solid;
+}
+
+.seclogin{
+    height: 700px;
+    width: 500px;
+    position: absolute;
+    right: 450px;
+    border: 5px red solid;
+}
+
+footer{
+    grid-area: footer;
+    position: relative;
+    height: 225px;
+    background-color: black;
+}
+
+
+/*imagens*/
+
+.logo{
+    height: 50px;
+    position: absolute;
+    top: 35px;
+    left: 75px;
+}
+
+.instagram{
+    height: 25px;
+    position: absolute;
+    bottom: 130px;
+    right: 235px;
+}
+
+.facebook{
+    height: 60px;
+    position: absolute;
+    bottom: 65px;
+    right: 217.5px;
+}
+
+.youtube{
+    height: 28px;
+    position: absolute;
+    bottom: 32px;
+    right: 233px;
+}
+
+/*texto*/
+
+h2{
+    color: white;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+ul{
+    color: white;
+    list-style: none;
+}
+
+li{
+    margin-bottom: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.ajuda{
+    position: absolute;
+    left: 40px;
+}
+
+.ulajuda{
+    position: absolute;
+    bottom: 0px;
+}
+
+.redes{
+    position: absolute;
+    right: 100px;
+}
+
+.ulredes{
+    position: absolute;
+    right: 150px;
+    bottom: 0px;
+    line-height: 39px;
+}
