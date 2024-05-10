@@ -56,10 +56,27 @@ main{
 }
 
 .caixatexto{
-    height: 40px;
-    width: 300px;
-    line-height: ;
-    font-size: 16px 
+    height: 45px;
+    width: 325px;
+    margin-bottom: 20px;
+    font-size: 20px;
+    border-radius: 5px;
+}
+
+.botao{
+    background-color: crimson;
+    color: white;
+    border-radius: 50px;
+    margin-left: 150px;
+    height: 50px;
+    width: 200px;
+    
+    cursor: pointer;
+}
+
+.botao:hover{
+    background-color: rgb(220, 57, 90);
+    transition: 0.1s;
 }
 
 footer{
@@ -102,7 +119,7 @@ footer{
 
 /*texto*/
 
-h1{
+.titulo{
     font-family:'Lucida Sans', Arial, Helvetica, sans-serif;
     font-size: 40px;
 }
@@ -110,6 +127,10 @@ h1{
 h2{
     color: white;
     font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.botao h1{
+    font-family: 'Lucida Sans', Arial, Helvetica, sans-serif;
 }
 
 ul{
