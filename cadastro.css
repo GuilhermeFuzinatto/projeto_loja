@@ -38,20 +38,20 @@ main{
 }
 
 .seccadastro{
-    height: 700px;
+    height: 550px;
     width: 500px;
     position: absolute;
-    left: 450px;
-    border: 5px blue solid;
+    left: 17.4%;
+    border-right: 3px solid lightgray;
     text-align: center;
 }
 
 .seclogin{
-    height: 700px;
+    height: 550px;
     width: 500px;
     position: absolute;
-    right: 450px;
-    border: 5px red solid;
+    right: 17.4%;
+    border-left: 3px solid lightgray;
     text-align: center;
 }
 
@@ -67,11 +67,7 @@ main{
     background-color: crimson;
     color: white;
     border-radius: 50px;
-    margin-left: 150px;
-    height: 50px;
     width: 200px;
-    
-    cursor: pointer;
 }
 
 .botao:hover{
