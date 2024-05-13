@@ -118,6 +118,11 @@ footer{
     background-color: crimson;
 }
 
+.perfil:hover{
+    background-color: rgb(220, 57, 90);
+    transition: 0.1s;
+}
+
 .carrinho{
     height: 50px;
     position: absolute;
@@ -160,9 +165,9 @@ footer{
 
 /*texto*/
 
-.ofertas{
+aside h1{
     position: absolute;
-    left: 60px;
+    left: 45px;
     font-family: Impact, 'Arial Narrow Bold', sans-serif;
     font-size: 25px;
 }

@@ -143,6 +143,11 @@ footer{
     background-color: crimson;
 }
 
+.perfil:hover{
+    background-color: rgb(220, 57, 90);
+    transition: 0.1s;
+}
+
 .carrinho{
     height: 50px;
     position: absolute;
