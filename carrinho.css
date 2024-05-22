@@ -1,0 +1,158 @@
+/*grid e responsividade*/
+
+body{
+    margin: 0;
+    display: grid;
+    grid-template-areas:
+    "header header header"
+    "main main main"
+    "footer footer footer";
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+/*estruturas semanticas*/
+
+header{
+    grid-area: header;
+    position: relative;
+    height: 125px;
+    background-color:crimson;
+}
+
+main{
+    grid-area: main;
+    height: 2000px;
+}
+
+.secprodutos{
+    height: 1000px;
+    width: 1000px;
+    position: absolute;
+    border: 5px solid red;
+}
+
+.secresumo{
+    height: 1000px;
+    width: 500px;
+    position: absolute;
+    border: 5px solid blue;
+}
+
+footer{
+    grid-area: footer;
+    position: relative;
+    height: 225px;
+    background-color: black;
+}
+
+/*imagens*/
+
+.logo{
+    height: 50px;
+    position: absolute;
+    top: 35px;
+    left: 75px;
+}
+
+.perfil{
+    height: 50px;
+    border-radius: 50px;
+    position: absolute;
+    top: 35px;
+    right: 150px;
+    background-color: crimson;
+}
+
+.perfil:hover{
+    background-color: rgb(220, 57, 90);
+    transition: 0.1s;
+}
+
+.carrinho{
+    height: 50px;
+    border-radius: 50px;
+    position: absolute;
+    top: 35px;
+    right: 75px;
+    background-color: crimson;
+}
+
+.carrinho:hover{
+    background-color: rgb(220, 57, 90);
+    transition: 0.1s;
+}
+
+.instagram{
+    height: 25px;
+    position: absolute;
+    bottom: 130px;
+    right: 235px;
+}
+
+.facebook{
+    height: 60px;
+    position: absolute;
+    bottom: 65px;
+    right: 217.5px;
+}
+
+.youtube{
+    height: 28px;
+    position: absolute;
+    bottom: 32px;
+    right: 233px;
+}
+
+/*texto*/
+
+main h1{
+    font-family:'Lucida Sans', Arial, Helvetica, sans-serif;
+    font-size: 35px;
+}
+
+.produtostxt{
+    position: absolute;
+    left: 0px;
+}
+
+.resumotxt{
+    position: absolute;
+    right: 0px;
+}
+
+h2{
+    color: white;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+ul{
+    color: white;
+    list-style: none;
+}
+
+li{
+    margin-bottom: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.ajuda{
+    position: absolute;
+    left: 40px;
+}
+
+.ulajuda{
+    position: absolute;
+    bottom: 0px;
+}
+
+.redes{
+    position: absolute;
+    right: 100px;
+}
+
+.ulredes{
+    position: absolute;
+    right: 150px;
+    bottom: 0px;
+    line-height: 39px;
+}

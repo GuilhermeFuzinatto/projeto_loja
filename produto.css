@@ -7,7 +7,7 @@ body{
     "header header header"
     "main main main"
     "footer footer footer";
-    grid-template-columns: 1fr 2fr 2fr;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 5fr 1fr;
 }
 
@@ -137,6 +137,7 @@ footer{
 
 .perfil{
     height: 50px;
+    border-radius: 50px;
     position: absolute;
     top: 35px;
     right: 150px;
@@ -150,9 +151,16 @@ footer{
 
 .carrinho{
     height: 50px;
+    border-radius: 50px;
     position: absolute;
     top: 35px;
     right: 75px;
+    background-color: crimson;
+}
+
+.carrinho:hover{
+    background-color: rgb(220, 57, 90);
+    transition: 0.1s;
 }
 
 .produto{

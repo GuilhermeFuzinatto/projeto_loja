@@ -35,9 +35,7 @@ header{
 
 aside{
     grid-area: aside;
-    position: relative;
-    width: 320px;
-    height: auto;
+    position: relative; 
     background-color: lightgray;
 }
 
@@ -56,7 +54,7 @@ footer{
     display: flex;
     flex-wrap: wrap;
     padding-top: 80px;
-    padding-left: 15px;
+    padding-left: 8px;
 }
 
 .acard{
@@ -112,6 +110,7 @@ footer{
 
 .perfil{
     height: 50px;
+    border-radius: 50px;
     position: absolute;
     top: 35px;
     right: 150px;
@@ -125,9 +124,16 @@ footer{
 
 .carrinho{
     height: 50px;
+    border-radius: 50px;
     position: absolute;
     top: 35px;
     right: 75px;
+    background-color: crimson;
+}
+
+.carrinho:hover{
+    background-color: rgb(220, 57, 90);
+    transition: 0.1s;
 }
 
 .instagram{
@@ -167,7 +173,7 @@ footer{
 
 aside h1{
     position: absolute;
-    left: 45px;
+    margin-left: 22%;
     font-family: Impact, 'Arial Narrow Bold', sans-serif;
     font-size: 25px;
 }
