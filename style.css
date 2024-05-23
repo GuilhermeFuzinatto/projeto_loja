@@ -24,7 +24,7 @@ body{
     }
 }
 
-/*estruturas semanticas*/
+/*estruturas semanticas, cards e botoes*/
 
 header{
     grid-area: header;
