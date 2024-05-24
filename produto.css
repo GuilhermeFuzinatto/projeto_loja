@@ -288,9 +288,15 @@ ul{
     list-style: none;
 }
 
-li{
+footer li{
     margin-bottom: 10px;
     font-family: Arial, Helvetica, sans-serif;
+}
+
+footer li:hover{
+    color: crimson;
+    transition: 0.1s;
+    cursor: pointer;
 }
 
 .ajuda{

@@ -10,6 +10,8 @@ body{
     grid-template-columns: 1fr 2fr 2fr;
 }
 
+/*FAZER UM MEDIA SCREEN PRA 1920 SE N VAI FICAR TUDO UMA PORRA*/
+
 @media screen and (max-width: 800px){
     body{
         margin: 0;
@@ -223,13 +225,20 @@ ul{
     list-style: none;
 }
 
-li{
+footer li{
     margin-bottom: 10px;
     font-family: Arial, Helvetica, sans-serif;
 }
 
+footer li:hover{
+    color: crimson;
+    transition: 0.1s;
+    cursor: pointer;
+}
+
 .ajuda{
     position: absolute;
+    top: 0px;
     left: 40px;
 }
 
@@ -238,8 +247,14 @@ li{
     bottom: 0px;
 }
 
+.sobre{
+    position: absolute;
+
+}
+
 .redes{
     position: absolute;
+    top: 0px;
     right: 100px;
 }
 
