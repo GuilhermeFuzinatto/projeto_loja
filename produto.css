@@ -330,7 +330,86 @@ footer li:hover{
     line-height: 39px;
 }
 
+/*menu retratil*/
+
+.menuicon{
+    position: absolute;
+    top: 43px;
+    left: 39px;
+    z-index: 999;
+    width: 35px;
+    height: 35px;
+}
+
+.menuicon span{
+    display: block;
+    width: 35px;
+    height: 5px;
+    margin-bottom: 10px;
+    background-color: white;
+    border-radius: 3px;
+    transition: all ease 0.5s;
+}
+
+.check{
+    position: absolute;
+    top: 40px;
+    left: 35px;
+    z-index: 1000;
+    width: 35px;
+    height: 35px;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.check:checked ~ .menuicon span:nth-child(1){
+    transform-origin: 0% 100%;
+    transform: rotate(45deg) scaleX(1.15);
+}
+
+.check:checked ~ .menuicon span:nth-child(2){
+    opacity: 0;
+}
+
+.check:checked ~ .menuicon span:nth-child(3){
+    transform-origin: 0% 0%;
+    transform: rotate(-45deg) scaleX(1.15);
+}
+
+.menu ul{
+    list-style-type: none;
+    position: absolute;
+    z-index: 998;
+    top: -17px;
+    left: -1000px;
+    width: 40%;
+    height: 3349px;
+    padding-top: 100px;
+    background-color: #232323;
+    transition: 0.5s;
+}
+
+.check:checked ~ ul{
+    left: 0px;
+}
+
+.menu ul li{
+    padding: 10px 30px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.menu ul li:hover{
+    color: crimson;
+}
+
 /*responsividade*/
+
+@media screen and (min-width: 800.5px) {
+    .menu{
+        display: none;
+    }
+}
 
 @media screen and (max-width: 800px) {
 
@@ -374,6 +453,18 @@ footer li:hover{
     }
 
     /*imagens*/
+
+    .logo{
+        left: 335px;
+    }
+
+    .perfil{
+        display: none;
+    }
+
+    .carrinho{
+        display: none;
+    }
 
     .produto{
         left: 140px;
@@ -433,7 +524,7 @@ footer li:hover{
     }
 
     .sug{
-        bottom: 500px;
+        bottom: 650px;
     }
 
     .ulajuda{
@@ -568,7 +659,7 @@ footer li:hover{
 
     .sug{
         font-size: 25px;
-        padding-bottom: 0px;
+        bottom: 500px;
     }
 
     .cardsug h3{
@@ -601,6 +692,22 @@ footer li:hover{
         top: 40px;
         left: 10px;
         font-size: 13px;
+    }
+
+    /*menu retratil*/
+
+    .check{
+        top: 17px;
+        left: 21px;
+    }
+
+    .menuicon{
+        top: 20px;
+        left: 25px;
+    }
+
+    .menu ul{
+        width: 50%;
     }
 
 }
