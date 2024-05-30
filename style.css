@@ -175,7 +175,7 @@ aside h1{
 
 .produtos{
     position: absolute;
-    left: 50%;
+    margin-left: 505px;
     font-family: Impact, 'Arial Narrow Bold', sans-serif;
     font-size: 50px;
 }
@@ -331,7 +331,7 @@ footer li:hover{
     }
 
     .produtos{
-        left: 280px;
+        margin-left: 280px;
     }
 
     .ulajuda{
@@ -356,5 +356,99 @@ footer li:hover{
 
     .sobretxt{
         left: 100px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+
+    /*grid*/
+
+    body {
+        grid-template-areas: 
+        "header"
+        "main"
+        "footer";
+        grid-template-columns: auto;
+        grid-template-rows: auto auto auto;
+    }
+
+    /*estruturas semanticas, cards e botoes*/
+
+    header{
+        height: 75px;
+    }
+
+    aside{
+        display: none;
+    }
+
+    .mcard{
+        width: 150px;
+        height: 210px;
+        padding-left: 5px;
+    }
+
+    /*imagens*/
+
+    .logo{
+        top: 12.5px;
+        left: 130px;
+    }
+
+    .perfil{
+        display: none;
+    }
+
+    .carrinho{
+        display: none;
+    }
+
+    .mcard img{
+        width: 144px;
+        height: 90px;
+    }
+
+    .footerlogo{
+        width: 125px;
+        top: 55px;
+        left: 250px;
+    }
+
+    /*texto*/
+
+    .produtos{
+        margin-left: 90px;
+    }
+
+    .mcard h3{
+        margin-top: 0px;
+        line-height: 16px;
+        font-size: 16px;
+    }
+
+    .mcard p{
+        font-size: 14px;
+    }
+
+    .preco{
+        padding-top: 10px;
+        line-height: 0px;
+    }
+
+    .preco2{
+        line-height: 0px;
+        font-size: 14px;
+    }
+
+    .sobre{
+        left: 10px;
+        font-size: 20px;
+    }
+
+    .sobretxt{
+        width: 200px;
+        top: 40px;
+        left: 10px;
+        font-size: 13px;
     }
 }

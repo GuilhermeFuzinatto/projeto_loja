@@ -371,10 +371,34 @@ footer li:hover{
         "main"
         "footer";
         grid-template-columns: auto;
-        grid-template-rows: auto auto auto auto;
+        grid-template-rows: auto auto auto;
     }
 
     /*estruturas semanticas, cards e botoes*/
+
+    main{
+        height: 1100px;
+    }
+
+    .produto1{
+        height: 240px;
+        width: 500px;
+    }
+
+    .menos{
+        top: 160px;
+        left: 25px;
+    }
+
+    .mais{
+        top: 160px;
+        left: 100px;
+    }
+
+    .secresumo{
+        margin-top: 515px;
+        margin-left: 80px;
+    }
 
     /*imagens*/
 
@@ -396,13 +420,24 @@ footer li:hover{
 
     /*texto*/
 
-    aside h1{
-        left: 120px;
-        font-size: 35px;
+    .qtd{
+        top: 110px;
+        left: 25px;
     }
 
-    .produtos{
-        left: 280px;
+    .qtdtxt{
+        top: 150px;
+        left: 75px;
+    }
+
+    .preco{
+        top: 110px;
+        left: 165px;
+    }
+
+    .resumotxt{
+        margin-top: 450px;
+        margin-left: 80px;
     }
 
     .ulajuda{
@@ -428,4 +463,111 @@ footer li:hover{
     .sobretxt{
         left: 100px;
     }
+}
+
+@media screen and (max-width: 400px) {
+
+    /*grid*/
+
+    body {
+        grid-template-areas: 
+        "header"
+        "main"
+        "footer";
+        grid-template-columns: auto;
+        grid-template-rows: auto auto auto;
+    }
+
+    /*estruturas semanticas, cards e botoes*/
+
+    header{
+        height: 75px;
+    }
+
+    .secprodutos{
+        margin-left: 10px;
+    }
+
+    .produto1{
+        width: 360px;
+    }
+
+    .secresumo{
+        width: 320px;
+        margin-left: 10px;
+    }
+
+    .caixacep{
+        width: 150px;
+        top: 15px;
+        left: 180px;
+    }
+
+    .caixacupom{
+        width: 150px;
+        top: 90px;
+        left: 180px;
+    }
+
+    .finalizar{
+        left: 70px;
+    }
+
+    /*imagens*/
+
+    .logo{
+        top: 12.5px;
+        left: 130px;
+    }
+
+    .perfil{
+        display: none;
+    }
+
+    .carrinho{
+        display: none;
+    }
+
+    .footerlogo{
+        width: 125px;
+        top: 55px;
+        left: 250px;
+    }
+
+    /*texto*/
+    
+    .carrinhotxt{
+        margin-left: 10px;
+        font-size: 30px;
+    }
+
+    .resumotxt{
+        margin-left: 10px;
+        font-size: 30px;
+    }
+
+    .resumoh3{
+        font-size: 18px;
+    }
+
+    .precototal{
+        top: 150px;
+    }
+
+    .preco2{
+        top: 190px;
+    }
+
+    .sobre{
+        left: 10px;
+        font-size: 20px;
+    }
+
+    .sobretxt{
+        width: 200px;
+        top: 40px;
+        left: 10px;
+        font-size: 13px;
+    }
+
 }

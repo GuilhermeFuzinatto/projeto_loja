@@ -199,10 +199,24 @@ footer li:hover{
         "main"
         "footer";
         grid-template-columns: auto;
-        grid-template-rows: auto auto auto auto;
+        grid-template-rows: 125px auto 225px;
     }
 
     /*estruturas semanticas, cards e botoes*/
+
+    .seccadastro{
+        width: 390px;
+        left: 5px;
+    }
+
+    .seclogin{
+        width: 390px;
+        left: 405px;
+    }
+
+    footer{
+        top: 0px;
+    }
 
     /*imagens*/
 
@@ -223,15 +237,6 @@ footer li:hover{
     }
 
     /*texto*/
-
-    aside h1{
-        left: 120px;
-        font-size: 35px;
-    }
-
-    .produtos{
-        left: 280px;
-    }
 
     .ulajuda{
         display: none;
@@ -256,4 +261,77 @@ footer li:hover{
     .sobretxt{
         left: 100px;
     }
+}
+
+@media screen and (max-width: 400px) {
+
+    /*grid*/
+
+    body {
+        grid-template-areas: 
+        "header"
+        "main"
+        "footer";
+        grid-template-columns: auto;
+        grid-template-rows: auto auto auto;
+    }
+
+    /*estruturas semanticas, cards e botoes*/
+
+    header{
+        height: 75px;
+    }
+
+    main{
+        height: 1000px;
+    }
+
+    .linha{
+        display: none;
+    }
+
+    .seclogin{
+        top: 80px;
+        left: 5px;
+    }
+
+    .seccadastro{
+        top: 500px;
+    }
+
+    /*imagens*/
+
+    .logo{
+        top: 12.5px;
+        left: 130px;
+    }
+
+    .perfil{
+        display: none;
+    }
+
+    .carrinho{
+        display: none;
+    }
+
+    .footerlogo{
+        width: 125px;
+        top: 55px;
+        left: 250px;
+    }
+
+    /*texto*/
+
+    .sobre{
+        left: 10px;
+        font-size: 20px;
+    }
+
+    .sobretxt{
+        width: 200px;
+        top: 40px;
+        left: 10px;
+        font-size: 13px;
+    }
+
 }
