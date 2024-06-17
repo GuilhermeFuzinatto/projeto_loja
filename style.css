@@ -1,22 +1,22 @@
 /*grid e responsividade*/
 
 body{
-    margin: 0;
+    margin: 0;     /* tira a margem do body */
     display: grid;
-    grid-template-areas:
+    grid-template-areas:     /* altera a forma como o grid é disposto */
     "header header header"
     "aside main main"
     "footer footer footer";
-    grid-template-columns: 1fr 2fr 2fr;
+    grid-template-columns: 1fr 2fr 2fr;     /* atera o tamanho das colunas do grid */
 }
 
 /*estruturas semanticas, cards e botoes*/
 
 header{
-    grid-area: header;
-    position: relative;
-    height: 125px;
-    background-color:crimson;
+    grid-area: header;     /* define nome da estrutura no grid */
+    position: relative;     /* define como funciona a posição do elemento na página */
+    height: 125px;     /* define altura do elemento*/
+    background-color:crimson;     /* define cor de fundo do elemento */
 }
 
 aside{
@@ -37,36 +37,36 @@ footer{
 }
 
 .asecao{
-    display: flex;
-    flex-wrap: wrap;
-    padding-top: 80px;
-    padding-left: 8px;
+    display: flex;     /* faz com que os elementos ajam como flexbox */
+    flex-wrap: wrap;     /* cria separação entre as flexbox */
+    padding-top: 80px;     /* dá distância dos elementos de dentro em relação ao topo */
+    padding-left: 8px;     /* dá distância dos elementos de dentro em relação à esquerda */
 }
 
 .acard{
-    width: 250px;
-    height: 300px;
-    border: 5px solid;
-    border-color: black;
-    border-radius: 10px;
-    margin-top: 20px;
-    margin-left: 4%;
-    padding-left: 10px;
-    font-family:'Lucida Sans', Arial, Helvetica, sans-serif;
-    cursor: pointer;
+    width: 250px;     /* define comprimento do elemento */
+    height: 300px;     /* define altura do elemento */
+    border: 5px solid;     /* define borda e tamanho dela no elemento */
+    border-color: black;     /* define cor de fundo do elemento */
+    border-radius: 10px;     /* define raio que aredonda as bordas */
+    margin-top: 20px;     /* define margem do elemento em relação ao que está acima*/
+    margin-left: 4%;     /* define margem do elemento em relação ao que está na esquerda */
+    padding-left: 10px;     /* dá distaãncia dos elementos de dentro em relação à esquerda */
+    font-family:'Lucida Sans', Arial, Helvetica, sans-serif;     /* define a fonte usada dentro do elemento */
+    cursor: pointer;     /* faz com que o cursor se altere ao passar por cima do elemento */
 }
 
-.acard:hover{
+.acard:hover{     /* altera o elemento quando o cursor passa por cima do mesmo */
     background-color: black;
-    color: white;
-    transition: 0.1s;
+    color: white;     /* altera a cor das letras dentro do elemento */
+    transition: 0.1s;     /* define o tempo de duração da transição da mudança */
 }
 
 .msecao{
     display: flex;
     flex-wrap: wrap;
     padding-left: 15px;
-    text-decoration: none;
+    text-decoration: none;     /* remove a decoração do texto dentro do elemento */
 }
 
 .mcard{
@@ -92,8 +92,8 @@ footer{
 .logo{
     height: 50px;
     position: absolute;
-    top: 35px;
-    left: 75px;
+    top: 35px;     /* define a distância do elemento em relação ao topo da estrutura em que se encontra */
+    left: 75px;     /* define a distância do elemento em relação à esquerda da estrutura em que se encontra */
 }
 
 .perfil{
@@ -171,7 +171,7 @@ aside h1{
     position: absolute;
     margin-left: 22%;
     font-family: Impact, 'Arial Narrow Bold', sans-serif;
-    font-size: 25px;
+    font-size: 25px;     /* altera o tamanho da fonte */
 }
 
 .produtos{
@@ -202,7 +202,7 @@ h4{
 }
 
 .desc{
-    line-height: 5px;
+    line-height: 5px;     /* define o tamanho da linha do texto */
 }
 
 .preco{
@@ -216,7 +216,7 @@ h4{
 
 footer ul{
     color: white;
-    list-style: none;
+    list-style: none;     /* remove a decoração na lista */
 }
 
 footer li{
